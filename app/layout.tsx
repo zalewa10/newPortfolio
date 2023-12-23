@@ -5,6 +5,8 @@ import { ThemeProvider } from "next-themes";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
+import About from "@/components/About";
+import Stack from "@/components/Stack";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -24,7 +26,8 @@ export default function RootLayout({
         >
           <Navbar />
           <Hero />
-
+          <About />
+          <Stack />
           {children}
         </ThemeProvider>
       </body>

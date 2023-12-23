@@ -12,7 +12,7 @@ const Hero = () => {
 
   return (
     <main
-      className="min-h-screen bg-background px-4 sm:px-6 lg:px-8 "
+      className="min-h-screen bg-background px-4 sm:px-6 lg:px-8 pb-5"
       style={{ minHeight: "calc(100vh - 88.64px)" }}
     >
       <Container>
