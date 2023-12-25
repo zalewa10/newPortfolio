@@ -1,19 +1,7 @@
 import cone from "@/public/img/traffic-cone.png";
+import{css,html,react,js,figma,git,github,next,tailwind} from "@/public/img/index"
 
-export const routes = [
-  {
-    href: "/Products",
-    label: "Products",
-  },
-  {
-    href: "/Products",
-    label: "Categories",
-  },
-  {
-    href: "/Products",
-    label: "On Sale",
-  },
-];
+
 
 export const product = [
   {
@@ -41,73 +29,49 @@ export const product = [
 
 export const stack = [
   {
-    imgURL: cone,
-    name: "Nazwa",
+    imgURL: html,
+    name: "Html",
     alt: "alt",
   },
   {
-    imgURL: cone,
-    name: "Nazwa",
+    imgURL: css,
+    name: "CSS",
     alt: "alt",
   },
   {
-    imgURL: cone,
-    name: "Nazwa",
+    imgURL: tailwind,
+    name: "Tailwind CSS",
     alt: "alt",
   },
   {
-    imgURL: cone,
-    name: "Nazwa",
+    imgURL: js,
+    name: "Java Script",
     alt: "alt",
   },
   {
-    imgURL: cone,
-    name: "Nazwa",
+    imgURL: react,
+        name: "React",
     alt: "alt",
   },
   {
-    imgURL: cone,
-    name: "Nazwa",
+    imgURL: next,
+        name: "Next.js 14",
     alt: "alt",
   },
   {
-    imgURL: cone,
-    name: "Nazwa",
+    imgURL: figma,
+        name: "Figma",
     alt: "alt",
   },
   {
-    imgURL: cone,
-    name: "Nazwa",
+    imgURL: github,
+        name: "GitHub",
     alt: "alt",
   },
   {
-    imgURL: cone,
-    name: "Nazwa",
+    imgURL: git,
+        name: "Git",
     alt: "alt",
   },
-  {
-    imgURL: cone,
-    name: "Nazwa",
-    alt: "alt",
-  },
-  {
-    imgURL: cone,
-    name: "Nazwa",
-    alt: "alt",
-  },
-  {
-    imgURL: cone,
-    name: "Nazwa",
-    alt: "alt",
-  },
-  {
-    imgURL: cone,
-    name: "Nazwa",
-    alt: "alt",
-  },
-  {
-    imgURL: cone,
-    name: "Nazwa",
-    alt: "alt",
-  },
+  
 ];
