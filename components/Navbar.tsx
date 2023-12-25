@@ -4,7 +4,6 @@ import { useTheme } from "next-themes";
 import Link from "next/link";
 import Container from "./ui/container";
 import { Button } from "./ui/button";
-{/* import { routes } from "@/constants/index"; */}
 import { Menu, Moon, Sun } from "lucide-react";
 import { Sheet, SheetContent, SheetTrigger } from "./ui/sheet";
 import { DropdownMenuSeparator } from "./ui/dropdown-menu";
