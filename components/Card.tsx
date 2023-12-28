@@ -1,14 +1,17 @@
 import Image from "next/image";
 
 import { product } from "@/constants/index";
-import Container from "../ui/container";
+import Container from "./ui/container";
 
 const Card = () => {
   return (
     <Container>
       <div className="flex flex-col md:flex-row w-full gap-10">
         {product.map((route, key) => (
-          <div key={key} className="flex flex-col items-center rounded-lg shadow-md gap-3 border p-2">
+          <div
+            key={key}
+            className="flex flex-col items-center rounded-lg shadow-md gap-3 border p-2"
+          >
             <Image
               src={route.imgURL}
               alt="Image"
