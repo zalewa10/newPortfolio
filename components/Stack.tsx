@@ -8,7 +8,7 @@ const Stack = () => {
     <div className="bg-background py-10">
       <Marquee direction="left" speed={100} pauseOnHover={true} autoFill>
         {stack.map((item, key) => (
-          <div key={key} className="mr-5" title={item.name}>
+          <div key={key} className="flex flex-col items-center gap-1">
             <Image src={item.imgURL} alt={item.alt} width={30} height={30} />
           </div>
         ))}
