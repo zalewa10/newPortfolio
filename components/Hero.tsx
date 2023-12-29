@@ -5,16 +5,8 @@ import { ChevronRightIcon } from "@radix-ui/react-icons";
 import { useTheme } from "next-themes";
 
 const Hero = () => {
-  const { theme } = useTheme();
-
-  // Set the fill color based on the theme
-  const fillColor = theme === "dark" ? "#FFFFFF" : "var(--secondary)";
-
   return (
-    <main
-      className="min-h-screen bg-background px-4 sm:px-6 lg:px-8 pb-5"
-      style={{ minHeight: "calc(100vh - 88.64px)" }}
-    >
+    <main className="lg:min-h-screen bg-background px-4 sm:px-6 lg:px-8 pb-5">
       <Container>
         <div className="px-4 sm:px-6 lg:px-8 lg:pt-32 flex flex-col-reverse md:flex-row items-center justify-between">
           <div className="flex flex-col items-center md:items-start justify-between gap-6">
@@ -40,7 +32,7 @@ const Hero = () => {
             width="548"
             height="486"
             viewBox="0 0 548 486"
-            fill={fillColor}
+            fill="#3576df"
             xmlns="http://www.w3.org/2000/svg"
             className="max-w-72 md:max-w-xs lg:max-w-md"
           >
