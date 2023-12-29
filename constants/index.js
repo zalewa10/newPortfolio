@@ -11,6 +11,9 @@ import {
   web,
   adaptive,
   layout,
+  autos,
+  seera,
+  collar,
 } from "@/public/img/index";
 
 export const product = [
@@ -85,16 +88,26 @@ export const stack = [
 export const portfolio = [
   {
     title: "SEERA-CORP",
-    imgURL: react,
+    imgURL: seera,
     desc: "Minimalistic and modern website displaying necessary information about business",
     buttons: [{ tech: "HTML" }, { tech: "Tailwind CSS" }],
     link: "www",
   },
   {
     title: "AUTO-S",
-    imgURL: react,
+    imgURL: autos,
     desc: "Advanced website with map, gallery, forms and more",
     buttons: [{ tech: "HTML" }, { tech: "JS" }, { tech: "Tailwind CSS" }],
+    link: "www",
+  },
+];
+
+export const projects = [
+  {
+    title: "Collar Dog - University Project",
+    imgURL: collar,
+    desc: "Minimalistic and modern website displaying necessary information about business",
+    buttons: [{ tech: "HTML" }, { tech: "Tailwind CSS" }],
     link: "www",
   },
 ];

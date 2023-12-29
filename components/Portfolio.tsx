@@ -1,7 +1,7 @@
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import Container from "./ui/container";
 import PortfolioCard from "./elements/PortfolioCard";
-import { portfolio } from "@/constants";
+import { portfolio, projects } from "@/constants";
 
 const Portfolio = () => {
   return (
@@ -28,9 +28,11 @@ const Portfolio = () => {
               </TabsContent>
 
               <TabsContent value="password">
-                <h1 className="scroll-m-20 text-center md:text-left text-4xl font-extrabold tracking-tight lg:text-6xl">
-                  Personal projects
-                </h1>
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 py-4">
+                  {projects.map((project, index) => (
+                    <PortfolioCard key={index} project={project} />
+                  ))}
+                </div>
               </TabsContent>
             </Tabs>
           </div>
