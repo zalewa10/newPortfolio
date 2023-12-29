@@ -37,7 +37,7 @@ const PortfolioCard: React.FC<PortfolioCardProps> = ({ project }) => {
 
       <CardContent>
         {imgURL && (
-          <Image src={imgURL} width={40} height={40} alt="Website Preview" />
+          <Image src={imgURL} className="w-full" alt="Website Preview" />
         )}
         <CardDescription className="mt-5">{desc}</CardDescription>
       </CardContent>
