@@ -7,6 +7,7 @@ import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
 import About from "@/components/About";
 import Stack from "@/components/Stack";
+import Portfolio from "@/components/Portfolio";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -27,7 +28,8 @@ export default function RootLayout({
           <Navbar />
           <Hero />
           <About />
-          <Stack />
+          {/* <Stack /> */}
+          <Portfolio />
           {children}
         </ThemeProvider>
       </body>
