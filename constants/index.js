@@ -91,14 +91,14 @@ export const portfolio = [
     imgURL: seera,
     desc: "Minimalistic and modern website displaying necessary information about business",
     buttons: [{ tech: "HTML" }, { tech: "Tailwind CSS" }],
-    link: "www",
+    link: "https://seera-corp.eu",
   },
   {
     title: "AUTO-S",
     imgURL: autos,
     desc: "Advanced website with map, gallery, forms and more",
     buttons: [{ tech: "HTML" }, { tech: "JS" }, { tech: "Tailwind CSS" }],
-    link: "www",
+    link: "https://auto-s.pl",
   },
 ];
 
@@ -108,6 +108,28 @@ export const projects = [
     imgURL: collar,
     desc: "Minimalistic and modern website displaying necessary information about business",
     buttons: [{ tech: "HTML" }, { tech: "Tailwind CSS" }],
-    link: "www",
+    link: "https://zalewa10.github.io/collar-dog-final/",
   },
 ];
+
+
+export const testimonials =[
+  {
+    name: "Sławomir P.",
+    role:"Właściciel OSK AUTO-S",
+    subtext:
+      `"Wszystko super"`,
+  },
+  {
+    name: "Bartosz K.",
+    role:"Właściciel SEERA-CORP",
+    subtext:
+      `"Dobry kontakt i szybkie wykonanie. Wszystko jak należy, polecam."`,
+  },
+  {
+    name: "Katarzyna B.",
+    role:"Właścicelka Drobiazgolandia.pl",
+    subtext:
+      `"Krzysztof zawsze na czas potrafił pomóc przy problemach występujących w moim sklepie internetowym. Polecam!"`,
+  },
+]

@@ -6,7 +6,7 @@ import { useTheme } from "next-themes";
 
 const Hero = () => {
   return (
-    <main className="lg:min-h-screen bg-background px-4 sm:px-6 lg:px-8 pb-5">
+    <main className="bg-background px-4 sm:px-6 lg:px-8 pb-5">
       <Container>
         <div className="px-4 sm:px-6 lg:px-8 lg:pt-32 flex flex-col-reverse md:flex-row items-center justify-between">
           <div className="flex flex-col items-center md:items-start justify-between gap-6">
@@ -19,8 +19,8 @@ const Hero = () => {
               />
             </h1>
             <p className="text-xl text-muted-foreground max-w-sm text-center md:text-left lg:max-w-lg">
-              Hi, my name is Krzysztof Zalewski. A passionate website developer
-              based in Poznań, Poland.
+              Hi, I'm Krzysztof Zalewski. A passionate website developer based
+              in Poznań, Poland.
             </p>
             <Button className="text-md">
               Contact Me

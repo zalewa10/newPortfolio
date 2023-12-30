@@ -8,6 +8,8 @@ import Hero from "@/components/Hero";
 import About from "@/components/About";
 import Stack from "@/components/Stack";
 import Portfolio from "@/components/Portfolio";
+import Testimonials from "@/components/Testimonials";
+import Contact from "@/components/Contact";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -30,6 +32,8 @@ export default function RootLayout({
           <About />
           {/* <Stack /> */}
           <Portfolio />
+          <Testimonials />
+          <Contact />
           {children}
         </ThemeProvider>
       </body>

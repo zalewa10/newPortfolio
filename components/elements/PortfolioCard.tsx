@@ -10,6 +10,7 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 import Image from "next/image";
+import Link from "next/link";
 
 type ButtonTech = {
   tech: string;
@@ -30,7 +31,7 @@ const PortfolioCard: React.FC<PortfolioCardProps> = ({ project }) => {
   const { title, imgURL, desc, buttons, link } = project;
 
   return (
-    <Card className="sm:w-[350px] ">
+    <Card className="min-w-[330px]">
       <CardHeader>
         <CardTitle>{title}</CardTitle>
       </CardHeader>
@@ -52,10 +53,12 @@ const PortfolioCard: React.FC<PortfolioCardProps> = ({ project }) => {
       </CardFooter>
 
       <CardFooter>
-        <Button variant="outline">
-          Visit
-          <ChevronRightIcon className="ml-2 h-4 w-4" />
-        </Button>
+        <Link href={link} rel="noopener noreferrer" target="_blank">
+          <Button variant="outline">
+            Visit
+            <ChevronRightIcon className="ml-2 h-4 w-4" />
+          </Button>
+        </Link>
       </CardFooter>
     </Card>
   );

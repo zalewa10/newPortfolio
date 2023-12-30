@@ -11,9 +11,9 @@ import { product } from "@/constants/index";
 
 const AboutCard = () => {
   return (
-    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 py-4 ">
+    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 py-4 ">
       {product.map((route, index) => (
-        <Card className="sm:w-[225px] md:w-[250px]" key={index}>
+        <Card className="min-w-[225px]" key={index}>
           <CardContent>
             <Image
               src={route.imgURL}
