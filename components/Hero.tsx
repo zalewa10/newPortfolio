@@ -19,8 +19,8 @@ const Hero = () => {
               />
             </h1>
             <p className="text-xl text-muted-foreground max-w-sm text-center md:text-left lg:max-w-lg">
-              Hi, I'm Krzysztof Zalewski. A passionate website developer based
-              in Poznań, Poland.
+              Hi, I&apos;sm Krzysztof Zalewski. A passionate website developer
+              based in Poznań, Poland.
             </p>
             <Button className="text-md">
               Contact Me
