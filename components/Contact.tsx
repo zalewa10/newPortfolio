@@ -1,5 +1,6 @@
 import ContactForm from "./elements/ContactForm";
 import Container from "./ui/container";
+import { Toaster } from "./ui/toaster";
 
 const Contact = () => {
   return (
@@ -11,6 +12,7 @@ const Contact = () => {
               Contact
             </h1>
             <ContactForm />
+            <Toaster />
           </div>
         </div>
       </Container>

@@ -118,18 +118,18 @@ export const testimonials =[
     name: "Sławomir P.",
     role:"Właściciel OSK AUTO-S",
     subtext:
-      `"Wszystko super"`,
+      "Wszystko super",
   },
   {
     name: "Bartosz K.",
     role:"Właściciel SEERA-CORP",
     subtext:
-      `"Dobry kontakt i szybkie wykonanie. Wszystko jak należy, polecam."`,
+      "Dobry kontakt i szybkie wykonanie. Wszystko jak należy, polecam.",
   },
   {
     name: "Katarzyna B.",
     role:"Właścicelka Drobiazgolandia.pl",
     subtext:
-      `"Krzysztof zawsze na czas potrafił pomóc przy problemach występujących w moim sklepie internetowym. Polecam!"`,
+      "Krzysztof zawsze na czas potrafił pomóc przy problemach występujących w moim sklepie internetowym. Polecam!",
   },
 ]

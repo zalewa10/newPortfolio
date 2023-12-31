@@ -1,4 +1,3 @@
-import Image from "next/image";
 import {
   Card,
   CardContent,
@@ -15,11 +14,9 @@ const AboutCard = () => {
       {testimonials.map((route, index) => (
         <Card className="min-w-[200px] flex flex-col justify-end" key={index}>
           <CardHeader>
-            <CardDescription>
-              <blockquote className="mt-6 border-l-2 pl-6 italic">
-                {route.subtext}
-              </blockquote>
-            </CardDescription>
+            <blockquote className="mt-6 border-l-2 pl-6 italic text-sm text-muted-foreground">
+              {route.subtext}
+            </blockquote>
           </CardHeader>
 
           <CardFooter className="flex flex-col items-start">
