@@ -118,7 +118,7 @@ export const testimonials =[
     name: "Sławomir P.",
     role:"Właściciel OSK AUTO-S",
     subtext:
-      "Wszystko super",
+      "Fachowe i merytoryczne podejście przez cały proces realizacji tworzenia strony internetowej. Pan Krzysztof to informatyk kreatywny mający mnóstwo fajnych pomysłów. Strona, którą opracował dla mojej firmy jest po prostu „szyta na miarę”, co przełożyło się na bardzo dobry odbiór i postrzeganie klientów. W 100% polecam."
   },
   {
     name: "Bartosz K.",

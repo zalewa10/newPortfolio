@@ -3,7 +3,6 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "../ui/textarea";
 import { Label } from "../ui/label";
-import { Card } from "../ui/card";
 import emailjs from "@emailjs/browser";
 import Confetti from "react-confetti";
 import { useToast } from "../ui/use-toast";
@@ -100,62 +99,61 @@ const ContactForm = () => {
   return (
     <div className="md:flex py-4 w-full">
       <ConfettiContainer>{showConfetti && <Confetti />}</ConfettiContainer>
-      <Card className="min-w-[330px] border-none w-full">
-        <div className="md:flex w-full justify-between">
-          <form ref={formRef} onSubmit={handleSubmit} className="space-y-3">
-            <div className="mt-3">
-              <Label htmlFor="name">Name</Label>
-              <Input
-                id="name"
-                type="text"
-                name="name"
-                value={form.name}
-                onChange={handleChange}
-                required={true}
-              />
-            </div>
 
-            <div className="mt-3">
-              <Label htmlFor="surname">Surname</Label>
-              <Input
-                id="surname"
-                type="text"
-                name="surname"
-                value={form.surname}
-                onChange={handleChange}
-                required={true}
-              />
-            </div>
+      <div className="md:flex w-full justify-between">
+        <form ref={formRef} onSubmit={handleSubmit} className="space-y-3">
+          <div>
+            <Label htmlFor="name">Name</Label>
+            <Input
+              id="name"
+              type="text"
+              name="name"
+              value={form.name}
+              onChange={handleChange}
+              required={true}
+            />
+          </div>
 
-            <div className="mt-3">
-              <Label htmlFor="email">Email Address</Label>
-              <Input
-                id="email"
-                type="email"
-                name="email"
-                value={form.email}
-                onChange={handleChange}
-                required={true}
-              />
-            </div>
+          <div className="mt-3">
+            <Label htmlFor="surname">Surname</Label>
+            <Input
+              id="surname"
+              type="text"
+              name="surname"
+              value={form.surname}
+              onChange={handleChange}
+              required={true}
+            />
+          </div>
 
-            <div className="mt-3">
-              <Label htmlFor="message">Message</Label>
-              <Textarea
-                id="message"
-                name="message"
-                value={form.message}
-                onChange={handleChange}
-                required={true}
-              />
-            </div>
+          <div className="mt-3">
+            <Label htmlFor="email">Email Address</Label>
+            <Input
+              id="email"
+              type="email"
+              name="email"
+              value={form.email}
+              onChange={handleChange}
+              required={true}
+            />
+          </div>
 
-            <Button type="submit" className="mt-3">
-              {loading ? "Sending..." : "Send"}
-            </Button>
-          </form>
-        </div>
-      </Card>
+          <div className="mt-3">
+            <Label htmlFor="message">Message</Label>
+            <Textarea
+              id="message"
+              name="message"
+              value={form.message}
+              onChange={handleChange}
+              required={true}
+            />
+          </div>
+
+          <Button type="submit" className="mt-3">
+            {loading ? "Sending..." : "Send"}
+          </Button>
+        </form>
+      </div>
     </div>
   );
 };

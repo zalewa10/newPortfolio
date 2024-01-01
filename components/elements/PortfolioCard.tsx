@@ -1,6 +1,8 @@
 import { ChevronRightIcon } from "@radix-ui/react-icons";
 import { Button } from "@/components/ui/button";
 import { StaticImageData } from "next/image";
+import { Skeleton } from "@/components/ui/skeleton";
+
 import {
   Card,
   CardContent,
@@ -37,8 +39,10 @@ const PortfolioCard: React.FC<PortfolioCardProps> = ({ project }) => {
       </CardHeader>
 
       <CardContent>
-        {imgURL && (
+        {imgURL ? (
           <Image src={imgURL} className="w-full" alt="Website Preview" />
+        ) : (
+          <Skeleton className="h-40 w-full" />
         )}
         <CardDescription className="mt-5">{desc}</CardDescription>
       </CardContent>
