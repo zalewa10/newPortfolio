@@ -107,7 +107,7 @@ export const projects = [
     title: "Collar Dog - University Project",
     imgURL: collar,
     desc: "Minimalistic and modern website displaying necessary information about business",
-    buttons: [{ tech: "HTML" }, { tech: "Tailwind CSS" }],
+    buttons: [{ tech: "HTML" }, { tech: "JS" }, { tech: "Tailwind CSS" }],
     link: "https://zalewa10.github.io/collar-dog-final/",
   },
 ];

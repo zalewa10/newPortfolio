@@ -10,6 +10,7 @@ import Stack from "@/components/Stack";
 import Portfolio from "@/components/Portfolio";
 import Testimonials from "@/components/Testimonials";
 import Contact from "@/components/Contact";
+import Footer from "@/components/Footer";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -34,7 +35,7 @@ export default function RootLayout({
           <Portfolio />
           <Testimonials />
           <Contact />
-          {children}
+          <Footer />
         </ThemeProvider>
       </body>
     </html>

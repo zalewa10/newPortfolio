@@ -40,7 +40,12 @@ const PortfolioCard: React.FC<PortfolioCardProps> = ({ project }) => {
 
       <CardContent>
         {imgURL ? (
-          <Image src={imgURL} className="w-full" alt="Website Preview" />
+          <Image
+            src={imgURL}
+            className="w-full"
+            alt="Website Preview"
+            placeholder="blur"
+          />
         ) : (
           <Skeleton className="h-40 w-full" />
         )}
@@ -51,7 +56,9 @@ const PortfolioCard: React.FC<PortfolioCardProps> = ({ project }) => {
         <div className="flex gap-2 flex-wrap">
           {buttons &&
             buttons.map((button, index) => (
-              <Button key={index}>{button.tech}</Button>
+              <Button key={index} size="sm" className="cursor-auto">
+                {button.tech}
+              </Button>
             ))}
         </div>
       </CardFooter>

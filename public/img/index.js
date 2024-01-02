@@ -13,7 +13,10 @@ import web from "./web-design.png";
 import seera from "./seera.jpg";
 import autos from "./autos.jpg";
 import collar from "./collar.jpg";
-
+import email from "./email.svg"
+import reactgif from"./scene1-2024-01-02 (1).gif"
+import heroimg from "./website-creator-animate.svg"
+import contactimg from"./contactimg.svg"
 export {
   seera,
   autos,
@@ -30,4 +33,8 @@ export {
   layout,
   adaptive,
   web,
+  email,
+  reactgif,
+  heroimg,
+  contactimg
 };
