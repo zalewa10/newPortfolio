@@ -9,7 +9,7 @@ const Footer = () => {
         <div className="px-4 sm:px-6 lg:px-8 w-full">
           <Separator />
           <div className="flex flex-col items-center justify-center md:items-start gap-6 w-full pt-6">
-            <code className="relative rounded bg-muted px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold">
+            <code className="relative rounded bg-muted px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-center md:text-left">
               &#60; Made with passion by {""}
               <Link href="" className="underline">
                 Krzysztof Zalewski

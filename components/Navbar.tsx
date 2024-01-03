@@ -1,16 +1,26 @@
 "use client";
 
+import { useState } from "react";
 import { useTheme } from "next-themes";
 import Link from "next/link";
 import Container from "./ui/container";
 import { Button } from "./ui/button";
 import { Moon, Sun } from "lucide-react";
-import Image from "next/image";
-import { github } from "@/public/img";
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuTrigger,
+} from "./ui/dropdown-menu";
 import { Separator } from "./ui/separator";
 
 const Navbar = () => {
   const { theme, setTheme } = useTheme();
+  const [selectedValue, setSelectedValue] = useState<string>("EN");
+
+  const handleSelect = (value: string) => {
+    setSelectedValue(value);
+  };
   return (
     <main>
       <header className="sm:flex sm:justify-between py-1 px-4">
@@ -26,7 +36,11 @@ const Navbar = () => {
 
               <div className="flex gap-2 items-end">
                 <Button variant="ghost" size="icon" aria-label="Github">
-                  <Link href="https://github.com/zalewa10/">
+                  <Link
+                    href="https://github.com/zalewa10/"
+                    rel="noopener noreferrer"
+                    target="_blank"
+                  >
                     <svg viewBox="0 0 438.549 438.549" className="h-6 w-6">
                       <path
                         fill="currentColor"
@@ -35,6 +49,7 @@ const Navbar = () => {
                     </svg>
                   </Link>
                 </Button>
+
                 <Button
                   variant="ghost"
                   size="icon"
@@ -45,6 +60,22 @@ const Navbar = () => {
                   <Moon className="absolute h-6 w-6 rotate-90 scale-0 transition-all dark:rotate-0 dark:scale-100" />
                   <span className="sr-only">Toggle Theme</span>
                 </Button>
+                <DropdownMenu>
+                  <DropdownMenuTrigger asChild>
+                    <Button variant="ghost" size="icon">
+                      <p className="text-xl font-bold">{selectedValue}</p>
+                      <span className="sr-only">Toggle theme</span>
+                    </Button>
+                  </DropdownMenuTrigger>
+                  <DropdownMenuContent align="end">
+                    <DropdownMenuItem onSelect={() => handleSelect("PL")}>
+                      PL
+                    </DropdownMenuItem>
+                    <DropdownMenuItem onSelect={() => handleSelect("EN")}>
+                      EN
+                    </DropdownMenuItem>
+                  </DropdownMenuContent>
+                </DropdownMenu>
               </div>
             </div>
             <Separator />

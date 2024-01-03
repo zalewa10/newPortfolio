@@ -19,7 +19,7 @@ const Hero = () => {
         <div className="px-4 sm:px-6 lg:px-8 lg:pt-32 flex flex-col-reverse md:flex-row items-center justify-between gap-4">
           <div className="flex flex-col items-center md:items-start justify-between gap-6">
             <h1 className="scroll-m-20 text-center md:text-left text-4xl font-extrabold tracking-tight lg:text-6xl">
-              Front-End React <br /> Developer{" "}
+              Front-End Web <br /> Developer{" "}
               <Image
                 src={reactgif}
                 className="inline ml-1 h-8 w-8 lg:h-12 lg:w-12"
@@ -41,7 +41,7 @@ const Hero = () => {
             </Button>
           </div>
 
-          <div className="w-[448px] h-[386px] lg:w-[548px] lg:h-[486px] flex justify-end">
+          <div className="w-[310px] h-[266px] sm:w-[438px] sm:h-[386px] lg:w-[548px] lg:h-[486px] flex justify-end">
             <Image
               src={heroimg}
               alt="People illustrations by Storyset"

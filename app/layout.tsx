@@ -31,7 +31,7 @@ export default function RootLayout({
           <Navbar />
           <Hero />
           <About />
-          {/* <Stack /> */}
+          <Stack />
           <Portfolio />
           <Testimonials />
           <Contact />

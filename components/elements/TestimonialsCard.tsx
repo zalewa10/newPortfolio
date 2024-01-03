@@ -14,7 +14,7 @@ const AboutCard = () => {
       {testimonials.map((route, index) => (
         <Card className="min-w-[200px] flex flex-col justify-end" key={index}>
           <CardHeader>
-            <blockquote className="mt-6 border-l-2 pl-6 italic text-sm text-muted-foreground">
+            <blockquote className="mt-6 border-l-2 pl-6 italic text-sm lg:text-base text-muted-foreground">
               {route.subtext}
             </blockquote>
           </CardHeader>

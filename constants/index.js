@@ -41,48 +41,64 @@ export const stack = [
   {
     imgURL: html,
     name: "Html",
-    alt: "alt",
+    alt: "HTML icon",
+    category: "Frontend Development",
   },
   {
     imgURL: css,
     name: "CSS",
-    alt: "alt",
+    alt: "CSS icon",
+    category: "Frontend Development",
   },
   {
     imgURL: tailwind,
     name: "Tailwind CSS",
-    alt: "alt",
+    alt: "Tailwind CSS icon",
+    category: "CSS Frameworks",
   },
   {
     imgURL: js,
-    name: "Java Script",
-    alt: "alt",
+    name: "JavaScript",
+    alt: "JavaScript icon",
+    category: "Frontend Development",
   },
   {
     imgURL: react,
     name: "React",
-    alt: "alt",
+    alt: "React icon",
+    category: "Frontend Development",
   },
   {
     imgURL: next,
     name: "Next.js 14",
-    alt: "alt",
+    alt: "Next.js icon",
+    category: "Frontend Development",
   },
   {
     imgURL: figma,
     name: "Figma",
-    alt: "alt",
+    alt: "Figma icon",
+    category: "Design Tools",
   },
   {
     imgURL: github,
     name: "GitHub",
-    alt: "alt",
+    alt: "GitHub icon",
+    category: "Version Control",
   },
   {
     imgURL: git,
     name: "Git",
-    alt: "alt",
+    alt: "Git icon",
+    category: "Version Control",
   },
+];
+
+export const categories = [
+  "Frontend Development",
+  "CSS Frameworks",
+  "Design Tools",
+  "Version Control",
 ];
 
 export const portfolio = [
@@ -112,24 +128,22 @@ export const projects = [
   },
 ];
 
-
-export const testimonials =[
+export const testimonials = [
   {
     name: "Sławomir P.",
-    role:"Właściciel OSK AUTO-S",
+    role: "Właściciel OSK AUTO-S",
     subtext:
-      "Fachowe i merytoryczne podejście przez cały proces realizacji tworzenia strony internetowej. Pan Krzysztof to informatyk kreatywny mający mnóstwo fajnych pomysłów. Strona, którą opracował dla mojej firmy jest po prostu „szyta na miarę”, co przełożyło się na bardzo dobry odbiór i postrzeganie klientów. W 100% polecam."
+      "Fachowe i merytoryczne podejście przez cały proces realizacji tworzenia strony internetowej. Strona, którą opracował dla mojej firmy jest po prostu „szyta na miarę”, co przełożyło się na bardzo dobry odbiór i postrzeganie klientów. W 100% polecam.",
   },
   {
     name: "Bartosz K.",
-    role:"Właściciel SEERA-CORP",
-    subtext:
-      "Dobry kontakt i szybkie wykonanie. Wszystko jak należy, polecam.",
+    role: "Właściciel SEERA-CORP",
+    subtext: "Dobry kontakt i szybkie wykonanie. Wszystko jak należy, polecam.",
   },
   {
     name: "Katarzyna B.",
-    role:"Właścicelka Drobiazgolandia.pl",
+    role: "Właścicelka Drobiazgolandia.pl",
     subtext:
-      "Krzysztof zawsze na czas potrafił pomóc przy problemach występujących w moim sklepie internetowym. Polecam!",
+      "Sprawna, szybka pomoc. Bardzo dobra komunikacja z klientem dzięki prostemu, zrozumiałemu językowi.",
   },
-]
+];

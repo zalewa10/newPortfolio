@@ -33,7 +33,7 @@ const PortfolioCard: React.FC<PortfolioCardProps> = ({ project }) => {
   const { title, imgURL, desc, buttons, link } = project;
 
   return (
-    <Card className="min-w-[330px]">
+    <Card className="sm:min-w-[310px]">
       <CardHeader>
         <CardTitle>{title}</CardTitle>
       </CardHeader>
@@ -56,7 +56,12 @@ const PortfolioCard: React.FC<PortfolioCardProps> = ({ project }) => {
         <div className="flex gap-2 flex-wrap">
           {buttons &&
             buttons.map((button, index) => (
-              <Button key={index} size="sm" className="cursor-auto">
+              <Button
+                key={index}
+                size="sm"
+                className="cursor-auto"
+                variant="outline"
+              >
                 {button.tech}
               </Button>
             ))}
@@ -65,7 +70,7 @@ const PortfolioCard: React.FC<PortfolioCardProps> = ({ project }) => {
 
       <CardFooter>
         <Link href={link} rel="noopener noreferrer" target="_blank">
-          <Button variant="outline">
+          <Button className="">
             Visit
             <ChevronRightIcon className="ml-2 h-4 w-4" />
           </Button>
