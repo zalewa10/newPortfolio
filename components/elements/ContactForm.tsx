@@ -98,7 +98,7 @@ const ContactForm = () => {
   };
 
   return (
-    <div className="md:flex py-4 w-full">
+    <div className="md:flex w-full">
       <ConfettiContainer>{showConfetti && <Confetti />}</ConfettiContainer>
       <div className="md:flex md:flex-row md:justify-between md:items-center md:gap-4 md:w-full">
         <form
