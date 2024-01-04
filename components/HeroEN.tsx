@@ -16,8 +16,8 @@ const Hero = () => {
   return (
     <main className="bg-background px-4 sm:px-6 lg:px-8 py-20 sm:py-6 lg:py-8">
       <Container>
-        <div className="px-4 sm:px-6 lg:px-8 lg:pt-32 flex flex-col-reverse md:flex-row items-center justify-between gap-4">
-          <div className="flex flex-col items-center md:items-start justify-between gap-6">
+        <div className="px-4 sm:px-6 lg:px-8 lg:pt-28 flex flex-col-reverse md:flex-row items-center justify-between gap-4">
+          <div className="flex flex-col items-center md:items-start justify-between gap-8">
             <h1 className="scroll-m-20 text-center md:text-left text-4xl font-extrabold tracking-tight lg:text-6xl">
               Front-End Web <br /> Developer{" "}
               <Image
