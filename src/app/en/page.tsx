@@ -2,9 +2,8 @@
 
 import { Inter } from "next/font/google";
 import { ThemeProvider } from "next-themes";
-import "./globals.css";
 import Navbar from "@/components/Navbar";
-import Hero from "@/components/Hero";
+import HeroEN from "@/components/HeroEN";
 import About from "@/components/About";
 import Stack from "@/components/Stack";
 import Portfolio from "@/components/Portfolio";
@@ -14,11 +13,7 @@ import Footer from "@/components/Footer";
 
 const inter = Inter({ subsets: ["latin"] });
 
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
+export default function Home() {
   return (
     <html lang="en">
       <body className={inter.className}>
@@ -29,7 +24,7 @@ export default function RootLayout({
           disableTransitionOnChange
         >
           <Navbar />
-          <Hero />
+          <HeroEN />
           <About />
           <Stack />
           <Portfolio />

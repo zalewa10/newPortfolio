@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { useTheme } from "next-themes";
 import Link from "next/link";
 import Container from "./ui/container";
@@ -13,14 +13,26 @@ import {
   DropdownMenuTrigger,
 } from "./ui/dropdown-menu";
 import { Separator } from "./ui/separator";
+import { useRouter } from "next/navigation";
 
 const Navbar = () => {
   const { theme, setTheme } = useTheme();
-  const [selectedValue, setSelectedValue] = useState<string>("EN");
+  const router = useRouter() as any;
+  const [selectedValue, setSelectedValue] = useState<string>("PL");
+
+  useEffect(() => {
+    setSelectedValue(window.location.pathname.startsWith("/en") ? "EN" : "PL");
+  }, []);
 
   const handleSelect = (value: string) => {
     setSelectedValue(value);
+    if (value === "EN") {
+      router.push("/en");
+    } else if (value === "PL") {
+      router.push("/");
+    }
   };
+
   return (
     <main>
       <header className="sm:flex sm:justify-between py-1 px-4">
@@ -60,7 +72,7 @@ const Navbar = () => {
                   <Moon className="absolute h-6 w-6 rotate-90 scale-0 transition-all dark:rotate-0 dark:scale-100" />
                   <span className="sr-only">Toggle Theme</span>
                 </Button>
-                <DropdownMenu>
+                {/* <DropdownMenu>
                   <DropdownMenuTrigger asChild>
                     <Button variant="ghost" size="icon">
                       <p className="text-xl font-bold">{selectedValue}</p>
@@ -75,7 +87,7 @@ const Navbar = () => {
                       EN
                     </DropdownMenuItem>
                   </DropdownMenuContent>
-                </DropdownMenu>
+                </DropdownMenu> */}
               </div>
             </div>
             <Separator />

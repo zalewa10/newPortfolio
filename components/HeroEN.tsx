@@ -27,16 +27,16 @@ const Hero = () => {
               />
             </h1>
             <p className="text-xl text-muted-foreground max-w-sm text-center md:text-left lg:max-w-lg">
-              Hej, nazywam się Krzysztof Zalewski. Jestem początkującym
-              deweloperem stron internetowych. Do tworzenia stron podchodzę
-              kreatywnie i z pasją.
+              Hi, I&apos;m Krzysztof Zalewski. A beginner website developer
+              based in Poland. I approach coding with creativity and an open
+              mindset.
             </p>
             <Button
               className="text-md rounded-lg py-5"
               size="lg"
               onClick={handleContactButtonClick}
             >
-              Napisz do mnie
+              Contact Me
               <ChevronRightIcon className="h-4 w-4 ml-2" />
             </Button>
           </div>
