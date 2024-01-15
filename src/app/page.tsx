@@ -17,6 +17,7 @@ const inter = Inter({ subsets: ["latin"] });
 export default function Home() {
   return (
     <html lang="en">
+      <meta name="google-site-verification" content="lChrf4R4smlYnl2HUIpK_azfQoVLO3ts4bzBtBrEGAw" />
       <body className={inter.className}>
         <ThemeProvider
           attribute="class"
